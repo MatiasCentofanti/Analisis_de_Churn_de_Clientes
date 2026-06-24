@@ -3,12 +3,12 @@
 Proyecto de análisis de abandono de clientes para una empresa de telecomunicaciones. Construí un pipeline completo desde la limpieza del CSV hasta un dashboard interactivo en Power BI, pasando por análisis exploratorio en Python y consultas SQL sobre MySQL.
 
 
-¿Qué hace este proyecto?
+## ¿Qué hace este proyecto?
 
 
 ETL con Python/Pandas: limpieza y transformación del dataset original
 Análisis exploratorio: 8 visualizaciones con Seaborn y Matplotlib sobre patrones de churn por contrato, antigüedad, servicio de internet, métodos de pago y perfil demográfico
-MySQL: importación del CSV limpio como tabla y 10 queries analíticas que responden preguntas de negocio reales
+MySQL: importación del CSV limpio como tabla y 6 queries analíticas que responden preguntas de negocio reales
 Dashboard Power BI: segmentación interactiva por género, contrato, servicio y grupo etario
 
 
@@ -25,30 +25,20 @@ Para correrlo: bajar el CSV de Kaggle y guardarlo como WA_Fn-UseC_-Telco-Custome
 ## Estructura del proyecto
 
 ```text
-telco-cliente-churn/
-
-├── datos/
-│   ├── WA_Fn-UseC_-Telco-Customer-Churn.csv
-│   └── telco_clean.csv
-
-├── imágenes/
-│   └── Churn_analysis.png
-
-├── sql/
-│   └── Queries.sql
-
-├── powerbi/
-│   └── Churn_analysis.pbix
-
-├── Churn_analysis.ipynb
-
-└── README.md
+telco-customer-churn/
+│
+├── WA_Fn-UseC_-Telco-Customer-Churn.csv   ← dataset original (bajar de Kaggle)
+├── telco_clean.csv                         ← se genera al correr el notebook
+│
+├── Churn_analysis.ipynb                    ← notebook principal (limpieza + análisis)
+├── Queries.sql                             ← queries analíticas sobre la tabla customers
+└── Churn_analysis.pbix                     ← dashboard Power BI
 ```
 
 
 
 
-Cómo correrlo
+## Cómo correrlo
 
 1. Instalar dependencias
 
@@ -81,7 +71,7 @@ Abrir churn_analysis.pbix en Power BI Desktop.
 Si la fuente de datos no conecta automáticamente: Inicio → Transformar datos → Configuración de origen de datos y apuntar al telco_clean.csv local.
 
 
-Hallazgos principales
+## Hallazgos principales
 
 
 El tipo de contrato es el factor con mayor impacto: los clientes mes a mes tienen una tasa de churn del 42.7%, vs 11.3% en contratos anuales y 2.8% en contratos de dos años.
@@ -91,13 +81,14 @@ Los mayores de 65 tienen un perfil de riesgo diferente: 41.7% de churn vs 23.6% 
 Electronic check concentra la mayor cantidad de bajas en términos absolutos, correlacionado con que también es el método más usado entre clientes mes a mes.
 
 
+## Stack técnico
 
-Stack técnico
-
-- Python 3.10
-- Pandas
-- NumPy
-- Matplotlib
-- Seaborn
-- MySQL Workbench
-- Power BI Desktop
+```text
+| Herramienta | Uso |
+|------------|-----|
+| Python 3.10 | Limpieza y análisis de datos |
+| Pandas / NumPy | Manipulación y transformación de datos |
+| Matplotlib / Seaborn | Visualizaciones y análisis exploratorio |
+| MySQL Workbench | Consultas y almacenamiento de datos |
+| Power BI Desktop | Dashboard interactivo |
+```
