@@ -11,10 +11,9 @@ Análisis exploratorio: 8 visualizaciones con Seaborn y Matplotlib sobre patrone
 MySQL: importación del CSV limpio como tabla y 6 queries analíticas que responden preguntas de negocio reales
 Dashboard Power BI: segmentación interactiva por género, contrato, servicio y grupo etario
 
-## Dashboard
+## Vista previa del dashboard
 
-![Dashboard](Analisis_de_Churn_de_Clientes/Churn_analysis.png)
-```
+![Dashboard de Análisis de Churn](Churn_analysis.png)
 
 Dataset
 
