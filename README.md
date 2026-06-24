@@ -29,7 +29,7 @@ Para correrlo: bajar el CSV de Kaggle y guardarlo como WA_Fn-UseC_-Telco-Custome
 ```text
 Churn-analysis/
 │
-├── WA_Fn-UseC_-Telco-Customer-Churn.csv   ← dataset original (bajar de Kaggle)
+├── WA_Fn-UseC_-Telco-Customer-Churn.csv    ← dataset original (bajar de Kaggle)
 ├── telco_clean.csv                         ← se genera al correr el notebook
 │
 ├── Churn_analysis.ipynb                    ← notebook principal (limpieza + análisis)
