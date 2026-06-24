@@ -13,7 +13,7 @@ Dashboard Power BI: segmentación interactiva por género, contrato, servicio y 
 
 ## Dashboard
 
-![Dashboard](churn_analysis.png)
+![Dashboard](Analisis_de_Churn_de_Clientes/Churn_analysis.png)
 ```
 
 Dataset
