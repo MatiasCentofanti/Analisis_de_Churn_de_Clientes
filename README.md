@@ -22,16 +22,17 @@ Telco Customer Churn — Kaggle
 Para correrlo: bajar el CSV de Kaggle y guardarlo como WA_Fn-UseC_-Telco-Customer-Churn.csv en la raíz del proyecto.
 
 
-Estructura del proyecto
+## Estructura del proyecto
 
-telco-customer-churn/
+```text
+telco-cliente-churn/
 
-├── data/
+├── datos/
 │   ├── WA_Fn-UseC_-Telco-Customer-Churn.csv
 │   └── telco_clean.csv
 
-├── images/
-│   ├── Churn_analysis.png
+├── imágenes/
+│   └── Churn_analysis.png
 
 ├── sql/
 │   └── Queries.sql
@@ -42,6 +43,9 @@ telco-customer-churn/
 ├── Churn_analysis.ipynb
 
 └── README.md
+```
+
+
 
 
 Cómo correrlo
