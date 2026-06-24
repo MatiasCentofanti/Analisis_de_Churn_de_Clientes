@@ -24,14 +24,24 @@ Para correrlo: bajar el CSV de Kaggle y guardarlo como WA_Fn-UseC_-Telco-Custome
 
 Estructura del proyecto
 
-churn-analysis/
-│
-├── WA_Fn-UseC_-Telco-Customer-Churn.csv   ← dataset original (bajar de Kaggle)
-├── telco_clean.csv                         ← se genera al correr el notebook
-│
-├── churn_analysis.ipynb                    ← notebook principal (limpieza + análisis)
-├── queries.sql                             ← queries analíticas sobre la tabla customers
-└── churn_analysis.pbix                     ← dashboard Power BI
+telco-customer-churn/
+
+├── data/
+│   ├── WA_Fn-UseC_-Telco-Customer-Churn.csv
+│   └── telco_clean.csv
+
+├── images/
+│   ├── Churn_analysis.png
+
+├── sql/
+│   └── Queries.sql
+
+├── powerbi/
+│   └── Churn_analysis.pbix
+
+├── Churn_analysis.ipynb
+
+└── README.md
 
 
 Cómo correrlo
@@ -80,4 +90,10 @@ Electronic check concentra la mayor cantidad de bajas en términos absolutos, co
 
 Stack técnico
 
-HerramientaPara quéPython 3.10Limpieza y análisisPandas / NumPyManipulación de datosSeaborn / MatplotlibVisualizacionesMySQL 8 + WorkbenchAlmacenamiento y queriesPower BI DesktopDashboard
+- Python 3.10
+- Pandas
+- NumPy
+- Matplotlib
+- Seaborn
+- MySQL Workbench
+- Power BI Desktop
