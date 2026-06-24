@@ -25,7 +25,7 @@ Para correrlo: bajar el CSV de Kaggle y guardarlo como WA_Fn-UseC_-Telco-Custome
 ## Estructura del proyecto
 
 ```text
-telco-customer-churn/
+Churn-analysis/
 │
 ├── WA_Fn-UseC_-Telco-Customer-Churn.csv   ← dataset original (bajar de Kaggle)
 ├── telco_clean.csv                         ← se genera al correr el notebook
